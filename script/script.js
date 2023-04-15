@@ -84,20 +84,20 @@ function SetImage() {
     document.getElementById("imageDiv").innerHTML = ""
     let image = document.createElement("img")
     image.setAttribute("id", "image")
-    image.setAttribute("src", "/images/" + player.position + ".jpg")
+    image.setAttribute("src", "./images/" + player.position + ".jpg")
     imageDiv.appendChild(image)
 
     if (player.position === cat.position){
         let objectImage = document.createElement("img")
         objectImage.setAttribute("id", "objectImage")
-        objectImage.setAttribute("src", "/images/cat.jpg")
+        objectImage.setAttribute("src", "./images/cat.jpg")
         imageDiv.appendChild(objectImage)
         console.log("Obj img: ", objectImage)
     }
     if (player.position === zombie.position){
         let objectImage = document.createElement("img")
         objectImage.setAttribute("id", "objectImage")
-        objectImage.setAttribute("src", "/images/zombie.jpg")
+        objectImage.setAttribute("src", "./images/zombie.jpg")
         imageDiv.appendChild(objectImage)
         console.log("Obj img: ", objectImage)
     }
