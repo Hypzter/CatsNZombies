@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GamePage</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="gameGrid">
+        <h1>Cats and Zombies</h1>
+        <p id="points"></p>
+        <div id="imageDiv"></div>
+        
+        <div id="allCells">
+            
+        </div>
+    </div>
+    
+    <div id="btnContainer">
+        <input type="button" class="btn" value="Upp" id="btnUp" onclick="Move(0, -1)">
+        <input type="button" class="btn" value="Ner" id="btnDown" onclick="Move(0, 1)">
+        <input type="button" class="btn" value="Vänster" id="btnLeft" onclick="Move(-1, 0)">
+        <input type="button" class="btn" value="Höger" id="btnRight" onclick="Move(1, 0)">
+    </div>
+    <p id="imageText"></p>
+    <h2 id="actionText"></h2>
+    <div id="api"></div>
+    <script src="script/script.js"></script>
+</body>
+
+</html>

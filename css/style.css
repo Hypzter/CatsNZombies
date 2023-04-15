@@ -1,0 +1,96 @@
+html, body {
+    background-color: bisque;
+}
+
+#allCells {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    width: 250px;
+    margin-left: 8vw;
+}
+.cell {
+    width: 50px;
+    height: 50px;
+    border: 2px solid;
+    box-shadow: 0 0 0 1px;
+    font-size: 40px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+#gameGrid {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    
+}
+#actionText {
+    margin-left: 12vh;
+    color: brown;
+}
+#image {
+    height: 400px;
+    position: absolute;
+    width: 400px;
+    margin: 0;
+}
+#catImage {
+    position: absolute;
+}
+#btnContainer {
+    display: grid;
+    height: 7em;
+    padding: 4px;
+    margin-left: 13vw;
+    width: 12vw;
+    grid-template-areas:
+                         'btnUp btnUp'
+                         'btnLeft btnRight'
+                         'btnDown btnDown';
+    grid-gap: 1px;
+}
+.btn {
+    background-color: aquamarine;
+    border-radius: 5px;
+}
+#imageText {
+    position: relative;
+    margin-left: 49.3vw;
+    margin-top: 3vh;
+    font-size: 1.5em;
+}
+#btnUp {
+    grid-area: btnUp;
+    width: 5.7em;
+    margin-left: 2.7em;
+}
+#btnDown {
+    grid-area: btnDown;
+    width: 5.7em;
+    margin-left: 2.7em;
+}
+#btnLeft {
+    grid-area: btnLeft;
+    width: 5.7em;
+}
+#btnRight {
+    grid-area: btnRight;
+    width: 5.7em;
+}
+#points {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#imageDiv {
+    position: relative;
+}
+#joke {
+    font-size: 2em;
+    text-align: center;
+    color: darkcyan;
+}
+#objectImage {
+    height: 100px;
+    width: 80px;
+    position: absolute;
+    margin-top: 18.75em;
+}
+
